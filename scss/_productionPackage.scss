@@ -1,0 +1,202 @@
+.production-packages {
+
+    &__structure {
+        margin-bottom: 160px;
+
+        &-img {
+            margin-bottom: 27px;
+        }
+    }
+
+    & .section-title {
+        margin-bottom: 75px;
+    }
+
+    &__algorithm {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        &-wrapper {
+            margin-bottom: 100px;
+        }
+
+        &-offer {
+            margin-left: 21px;
+        }
+
+        &-img-block {
+            position: relative;
+        }
+
+        &-number {
+            width: 66px;
+            height: 60px;
+            position: absolute;
+            top: 0;
+            background-image: url("../img/Packages/Production/Algorithm/number.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 19px;
+            font-weight: 700;
+
+            &-odd {
+                right: 0;
+            }
+
+            &-even {
+                left: 0;
+            }
+        }
+
+        &-title {
+            font-size: 26px;
+            font-weight: 700;
+            text-transform: uppercase;
+            white-space: pre-line;
+            margin-bottom: 20px;
+            line-height: 1.2em;
+        }
+
+        &-description {
+            font-size: 18px;
+            width: 460px;
+            line-height: 1.2em;
+
+        }
+    }
+}
+
+.production-video-review {
+    & .section-title {
+        width: 640px;
+        margin: auto;
+        margin-bottom: 36px;
+    }
+
+    &__video {
+        width: 100%;
+        border-radius: 20px;
+        cursor: pointer;
+
+        &-play {
+            position: absolute;
+            top: 43%;
+            left: 45%;
+            z-index: 1;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #fff;
+            background-image: url("../img/Icons/play.svg");
+            background-repeat: no-repeat;
+            background-size: 31px 31px;
+            background-position: 50% 50%;
+        }
+
+        &-block {
+            position: relative;
+            margin-bottom: 140px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .production-packages {
+        &__structure {
+            &-img {
+                width: 222px;
+                height: 167px;
+            }
+
+            &-text {
+                font-size: 17px;
+            }
+        }
+
+        &__algorithm {
+            &-offer {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+            
+            &-title {
+                white-space: normal;
+            }
+
+            &-number {
+                font-size: 10px;
+                width: 35px;
+                height: 31px;
+
+                &-even {
+                    right: 0;
+                    left: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .production-packages {
+        &__structure {
+            margin-bottom: 60px;
+
+            &-img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 0;
+            }
+
+            &-text {
+                text-align: center;
+                margin-top: 15px;
+                margin-bottom: 40px;
+            }
+        }
+
+        &__algorithm {
+            margin-bottom: 0;
+
+            &-offer {
+                margin-top: 19px;
+                margin-bottom: 40px;
+            }
+
+            &-wrapper {
+                margin-bottom: 60px;
+            }
+
+            &-title {
+                font-size: 17px;
+            }
+
+            &-description {
+                font-size: 12px;
+                width: 280px;
+            }
+
+            &-img {
+                height: 214px;
+                width: 100%;
+                padding-right: 0;
+            }
+        }
+    }
+
+    .production-video-review {
+        & .section-title {
+            width: 290px;
+        }
+
+        &__video-block {
+            margin-bottom: 0;
+        }
+    }
+}
+

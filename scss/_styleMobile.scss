@@ -1,0 +1,75 @@
+@media (max-width: 1400px) {
+    h4 {
+        font-size: 38px;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+    
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: 25px;
+    }
+
+    .main-btn, .second-btn {
+        font-size: 15px;
+        padding: 15px 46px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scroll-up {
+        width: 49px;
+        height: 49px;
+        background-size: 9px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 19px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+    
+    .scroll-up {
+        width: 39px;
+        height: 39px;
+        background-size: 7px;
+        right: 5px;
+        bottom: 5px;
+    }
+}

@@ -1,0 +1,74 @@
+.contacts {
+    margin-top: 83px;
+
+    &__content {
+        height: 390px;
+    }
+
+    &__offer {
+        width: 90%;
+        height: 100%;
+        padding-top: 72px;
+        padding-bottom: 42px;
+        padding-left: 44px;
+        border: solid 3px $greenMain;
+
+        &-title, &-intro {
+            width: 370px;
+        }
+
+        &-title {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        &-intro {
+            font-size: 18px;
+        }
+
+        &-email {
+            font-size: 18px;
+            color: $greenMain;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .contacts {
+        margin-top: 36px;
+
+        &__offer {
+            margin: auto;
+            &-block {
+                margin-top: 45px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .contacts {
+        &__content {
+            height: 260px;
+        }
+        &__offer {
+            padding-left: 25px;
+            padding-top: 40px;
+            padding-bottom: 27px;
+            
+            &-title, &-intro {
+                width: 215px;
+            }
+
+            &-title {
+                font-size: 25px;
+                margin-bottom: 25px;
+            }
+
+            &-intro, &-email {
+                font-size: 11px;
+            }
+        }
+    }
+}

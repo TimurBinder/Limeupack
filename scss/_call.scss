@@ -1,0 +1,116 @@
+.call-window {
+    width: 569px;
+    margin: auto;
+    text-align: center;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 93px;
+    padding-bottom: 98px;
+    border-radius: 30px;
+    background-color: $greenMain;
+    position: fixed;
+    color: #fff;
+    top: 10vw;
+    left: 30%;
+    display: none;
+    z-index: 1;
+
+    &-close {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        cursor: pointer;
+    }
+
+    &__intro {
+        font-size: 18px;
+        margin: auto;
+        margin-top: 22px;
+        font-family: 'Rubik', sans-serif;
+        width: 90%;
+    }
+
+    &__form {
+        margin-top: 102px;
+        position: relative;
+
+        &__wrapper {
+            margin-bottom: 34px;
+            position: relative;
+        }
+
+        &-input {
+            margin-right: 0;
+
+            &::-webkit-input-placeholder {
+                color: #c6c7c9;
+            }
+
+            &:-moz-input-placeholder {
+                color: #c6c7c9;
+            }
+
+            &-placeholder {
+                left: 80px;
+            }
+
+            &-icon {
+                right: 80px;
+            }
+
+            &__phone-country {
+                left: 90px;
+            }
+        }
+
+        & .main-btn {
+            border-radius: 45px;
+            border: none;
+            font-size: 18px;
+            padding: 17px 82px;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 556px) {
+    .call-window {
+        border-radius: 0;
+        padding-top: 57px;
+        padding-bottom: 110px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        
+        &__title {
+            font-size: 24px;
+        }
+
+        &__intro {
+            font-size: 14px;
+            width: 70%;
+        }
+
+        &__form {
+            margin-top: 48px;
+
+            &-input {
+                width: 77%;
+                height: 50px;
+
+                &__phone-country {
+                    left: 85px;
+                }
+            }
+
+            & .main-btn {
+                margin-top: 0;
+                padding: 16px 0;
+                width: 77%;
+                font-size: 13px;
+            }
+        }
+    }
+}

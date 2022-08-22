@@ -1,0 +1,32 @@
+.certificates {
+    & .section-title {
+        width: 1050px;
+        margin: auto;
+        margin-bottom: 55px;
+    }
+
+    &__caption {
+        font-weight: 600;
+        font-size: 27px;
+        margin-top: 35px;
+        line-height: 1.2em;
+    }
+
+    &-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .certificates {
+        & .section-title {
+            width: 100%;
+        }
+
+        &__caption {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+    }
+}
